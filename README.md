@@ -1,6 +1,6 @@
 # AngularTest
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.4.
+This project is created to manage test component and try new modules in develop environment 
 
 ## Development server
 
