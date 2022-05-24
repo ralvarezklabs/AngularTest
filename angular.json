@@ -31,9 +31,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/pivottable/dist/pivot.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/pivottable/dist/pivot.min.js"
+            ]
           },
           "configurations": {
             "production": {
