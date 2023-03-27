@@ -10,7 +10,7 @@
     <select [disabled]="(!seleccionados[indexFather])" id="{{indexFather+'Amount'}}" class="selectCantidadDevolucion" (change)="changeAmountFromPatient($event,indexFather)"
         [ngModel]="(seleccionados[indexFather] ? seleccionados[indexFather].cantDev : 0)">
         <option class="h5OpcionesEscaneo" *ngFor="let p of amountByPatient" [value]="p"
-        [hidden]="(amountStockSelect - getTotalAmount  ) < p"
+        [hidden]="(amountStockSelect - getTotalAmount + opcion.cantDev ) < p"
         >
             {{p}}</option>
 
