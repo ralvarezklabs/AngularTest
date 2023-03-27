@@ -1,3 +1,4 @@
+import { ClientCompComponent } from './client-comp.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 

@@ -21,6 +21,7 @@
     "@angular/platform-browser-dynamic": "~13.0.0",
     "@angular/router": "~13.0.0",
     "@schematics/angular": "^14.2.6",
+    "bootstrap": "^5.2.3",
     "jquery": "^3.6.0",
     "jquery-ui": "^1.13.1",
     "pivottable": "^2.23.0",

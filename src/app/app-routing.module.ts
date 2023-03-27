@@ -2,9 +2,10 @@ import { AppComponent } from './app.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { TablePivotComponent } from './components/table-pivot/table-pivot.component';
+import { ClientCompComponent } from './components/table-pivot/client-comp.component';
 
 const routes: Routes = [
-  {path:'', component: AppComponent },
+  {path:'', component: ClientCompComponent },
   // {
   //   path: 'pivot',
   //   component: TablePivotComponent,

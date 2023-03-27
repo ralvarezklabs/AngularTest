@@ -1,0 +1,27 @@
+<input type="number" name="amount" id="amount" [(ngModel)]="amountStockSelect" (change)="recalcAmount()">
+<div *ngFor="let opcion of opciones; index as indexFather,last as esUltimo,first as esPrimero" [hidden]="!opcion.flag">
+
+    <select [(ngModel)]="seleccionados[indexFather]" (change)="selectingPatient(indexFather)">
+        <option value="" selected>Selecciona una opción</option>
+        <option *ngFor="let o of opciones" [ngValue]="o" [hidden]="seleccionados.includes(o) ">
+            {{ o.nombre }}
+        </option>
+    </select>
+    <select [disabled]="(!seleccionados[indexFather])" id="{{indexFather+'Amount'}}" class="selectCantidadDevolucion" (change)="changeAmountFromPatient($event,indexFather)"
+        [ngModel]="(seleccionados[indexFather] ? seleccionados[indexFather].cantDev : 0)">
+        <option class="h5OpcionesEscaneo" *ngFor="let p of amountByPatient" [value]="p"
+        [hidden]="(amountStockSelect - getTotalAmount  ) < p"
+        >
+            {{p}}</option>
+
+    </select>
+
+    <button type="button" class="trashButton pt-2 ps-0 mt-1" [disabled]="(esPrimero)" (click)="removeRow(indexFather)">Quitar
+    </button>
+    <button type="button" class="addButton pt-2 ps-0 mt-1 "
+                                        (click)="addRowListPatiente(indexFather)">Agregar
+                                    </button>
+</div>
+
+<button class="btn btn-warning" (click)="cancel()">Cancelar</button>
+<button class="btn btn-primary" (click)="save()">SAve</button>

@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ClientCompComponent } from './client-comp.component';
 import { TablePivotComponent } from './table-pivot.component';
 
 const routes: Routes = [
-  {path:'', component: TablePivotComponent }
+  {path:'', component: TablePivotComponent },
+ 
 ];
 
 @NgModule({
