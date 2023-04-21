@@ -1,3 +1,6 @@
+# Travis resultado 
+[![Build Status](https://app.travis-ci.com/ralvarezklabs/AngularTest.svg?branch=master)](https://app.travis-ci.com/ralvarezklabs/AngularTest)
+
 # AngularTest
 
 This project is created to manage test component and try new modules in develop environment 
