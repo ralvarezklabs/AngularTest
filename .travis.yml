@@ -3,6 +3,17 @@ node_js:
   - "lts/*"
 dist: trusty
 sudo: required
+git:
+  # Desactivar la verificación del certificado SSL
+  # para evitar el error "server certificate verification failed"
+  # al clonar el repositorio.
+  clone:
+    depth: false
+    # No verificar el certificado SSL
+    - config --global http.sslVerify false
+branches:
+  only:
+    - pivot
 addons:
   chrome: stable
 cache:
@@ -12,3 +23,11 @@ install:
   - npm install
 script:
   - ng test --watch=false --browsers=ChromeHeadless
+  
+# Notificaciones de resultado de compilación
+notifications:
+  email:
+    recipients:
+      - ralvarez@kreilabs.com
+    on_success: always # siempre notificar cuando la compilación tiene éxito
+    on_failure: always # siempre notificar cuando la compilación falla
