@@ -15,9 +15,10 @@ addons:
 cache:
   directories:
     - node_modules
-install:
+before_install:
   # No verificar el certificado SSL
   - config --global http.sslVerify false
+install:
   - npm install
 script:
   - ng test --watch=false --browsers=ChromeHeadless
