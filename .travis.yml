@@ -6,11 +6,7 @@ sudo: required
 git:
   # Desactivar la verificación del certificado SSL
   # para evitar el error "server certificate verification failed"
-  # al clonar el repositorio.
-  clone:
-    depth: false
-    # No verificar el certificado SSL
-    - config --global http.sslVerify false
+  depth: false
 branches:
   only:
     - pivot
@@ -20,6 +16,8 @@ cache:
   directories:
     - node_modules
 install:
+  # No verificar el certificado SSL
+  - config --global http.sslVerify false
   - npm install
 script:
   - ng test --watch=false --browsers=ChromeHeadless
