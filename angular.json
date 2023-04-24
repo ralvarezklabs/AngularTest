@@ -36,7 +36,8 @@
             ],
             "styles": [
               "src/styles.scss",
-              "node_modules/pivottable/dist/pivot.min.css"
+              "node_modules/pivottable/dist/pivot.min.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",

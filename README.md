@@ -1,5 +1,5 @@
 # Travis resultado 
-[![Build Status](https://app.travis-ci.com/ralvarezklabs/AngularTest.svg?branch=master)](https://app.travis-ci.com/ralvarezklabs/AngularTest)
+[![Build Status](https://app.travis-ci.com/ralvarezklabs/AngularTest.svg?branch=pivot)](https://app.travis-ci.com/ralvarezklabs/AngularTest)
 
 # AngularTest
 
