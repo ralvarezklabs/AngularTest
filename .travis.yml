@@ -18,10 +18,10 @@ cache:
 before_install:
   # No verificar el certificado SSL
   - git config --global http.sslVerify false
-  - apt-get update
-  - apt-get install -y ca-certificates
-  - export GIT_SSL_NO_VERIFY=true
-  - npm config set progress false
+  # apt-get update
+  #apt-get install -y ca-certificates
+  #export GIT_SSL_NO_VERIFY=true
+  #npm config set progress false
 install:
   - npm install
 script:
