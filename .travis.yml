@@ -17,7 +17,7 @@ cache:
     - node_modules
 before_install:
   # No verificar el certificado SSL
-  - config --global http.sslVerify false
+  - git config --global http.sslVerify false
   - sudo apt-get update -qq
   - sudo apt-get install -y ca-certificates
   - export GIT_SSL_NO_VERIFY=true
