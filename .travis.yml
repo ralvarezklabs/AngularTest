@@ -12,9 +12,6 @@ branches:
     - pivot
 addons:
   chrome: stable
-cache:
-  directories:
-    - node_modules
 before_install:
   # No verificar el certificado SSL
   - git config --global http.sslVerify false
