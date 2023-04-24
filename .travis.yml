@@ -22,7 +22,7 @@ before_install:
 install:
   - npm install
 script:
-  - npm run ng test --watch=false
+  - npm run ng test --watch=false --browsers=ChromeHeadless
   
 # Notificaciones de resultado de compilación
 notifications:
