@@ -15,7 +15,6 @@ addons:
 before_install:
   # No verificar el certificado SSL
   - git config --global http.sslVerify false
-  - yarn global add @angular/cli
   # apt-get update
   #apt-get install -y ca-certificates
   #export GIT_SSL_NO_VERIFY=true
@@ -23,7 +22,7 @@ before_install:
 install:
   - npm install
 script:
-  - ng test --watch=false --browsers=ChromeHeadless
+  - npm run ng test --watch=false
   
 # Notificaciones de resultado de compilación
 notifications:
