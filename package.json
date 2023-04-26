@@ -6,7 +6,7 @@
     "start": "ng serve --port 4000",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test --source-map=false --watch=false",
+    "test": "ng test --source-map=false --watch=false --browsers=ChromeHeadless",
     "lint": "ng lint"
   },
   "private": true,
