@@ -23,12 +23,11 @@ install:
   - npm install
 script:
   - npm run lint
-  - npm run ng test --watch=false --browsers=ChromeHeadless
+  - npm run test
   
 # Notificaciones de resultado de compilación
 notifications:
   email:
     recipients:
       - ralvarez@kreilabs.com
-    on_success: always # siempre notificar cuando la compilación tiene éxito
     on_failure: always # siempre notificar cuando la compilación falla
